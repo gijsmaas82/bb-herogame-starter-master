@@ -21,15 +21,15 @@
       </h2>
       <div class="heroStats" id="heroStats">
       </div>
-      <button id="startButton" onclick="startGame()">Start Game</button>
+      <div id="startButton"><button onclick="startGame()">Start Game</button></div>
     </aside>
     <section class="content" id="content">
-      <p class="gameRules" id="gameRules">Click on the button to start the game.<br>Click on the monster to defeat it.</p>
+      <p class="gameRules" id="gameRules">Click on the button to start the game.<br>Click on attack to defeat the monster.<br>Click on the inn to replenish your health after the fight.<br>Click on the dagger to add a dagger to your inventory.<br>Click on the bag to equip the dagger.<br>Click on respawn to start a new game.</p>
     </section>
   </main>
 
   <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
-  <button onclick="mocha.checkLeaks(); mocha.run();" style="display: none">Run the tests!</button>
+  <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
 
   <div id="mocha">
   <!-- MOCHA TEST FEEDBACK WILL BE RENDERED HERE -->
