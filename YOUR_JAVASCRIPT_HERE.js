@@ -15,7 +15,8 @@ function rest(hero) {
         alert('Dude! Your health is already at 10!!')
     } else { 
         hero.health = 10
-        
+        const heroHealth = document.getElementById('heroHealth')
+    heroHealth.textContent = 'Health: ' + hero.health + '/10'
         return hero
     }
 
