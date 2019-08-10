@@ -31,3 +31,33 @@ section {
     display: flex;
     flex-direction: column;
 }
+
+.attack {
+    animation: attack 0.5s ease;
+}
+
+.monsterAnimation {
+    animation: monster 0.5s 1 ease;
+}
+
+@keyframes attack {
+    from  {
+        left: 50vh;
+        transform: rotate(0deg);
+        opacity: 0;
+    } to {
+        left: 100vh;
+        transform: rotate(3600deg);
+        opacity: 1;
+    }
+}
+
+@keyframes monster {
+    from {
+        opacity: 1;
+        left: 120vh;
+    } to {
+        opacity: 0;
+        left: 80vh;
+    }
+}
